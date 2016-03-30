@@ -6,8 +6,66 @@
 </head>
 <body>
   <a-scene>
-    <a-sky src="books-large.jpg"></a-sky>
-    <a-image src="title.jpg" width="50" height="20" position="5 0 30" rotation="0 180 0" scale="0.2 0.2 0.2"></a-image>
+
+    <a-camera
+      position="0 1.8 0"
+      rotation="0 260">
+    </a-camera>
+
+    <a-entity light="color:#fff; intensity: 3" position="-2 -1 0"></a-entity>
+
+    <a-entity id="head">
+      <a-sphere
+        position="4.5 2.5 1"
+        radius="0.5">
+      </a-sphere>
+      <a-cylinder id="nose"
+        height="0.5"
+        radius="0.06"
+        position="4 2.45 0.8"
+        rotation="-90 50"
+        color="#ffa000">
+      </a-cylinder>
+      <a-sphere id="left-eye"
+        radius="0.1"
+        position="4.2 2.6 0.7"
+        color="#000">
+      </a-sphere>
+      <a-sphere id="right-eye"
+        radius="0.1"
+        position="4.08 2.6 0.95"
+        color="#000">
+      </a-sphere>
+    </a-entity>
+
+    <a-entity id="upper-body">
+      <a-sphere
+        position="4.5 1.5 1"
+        radius="0.8">
+      </a-sphere>
+      <a-sphere class="button"
+        radius="0.1"
+        position="3.5 1.5 0.6"
+        color="#000">
+      </a-sphere>
+    </a-entity>
+
+    <a-entity id="lower-body">
+      <a-sphere
+        position="4.5 0 1"
+        radius="1.2">
+      </a-sphere>
+      <a-sphere class="button"
+        radius="0.1"
+        position="3.2 0.7 0.5"
+        color="#000">
+      </a-sphere>
+    </a-entity>
+
+    <a-sky src="equi_snow.jpg"></a-sky>
+
   </a-scene>
+
+  <!-- <script src="script.js"></script> -->
 </body>
 </html>
