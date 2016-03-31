@@ -1,7 +1,10 @@
 $(document).ready(function(){
 
+  // clear the target entity
   $('#cube-div').empty();
 
+  // every quarter-second clear the target entity, then add a row of cubes,
+  // varying height and distance from camera
   setTimeout(function(){
     $('#cube-div').empty();
     addCube('10', '0', '10', '5');
@@ -112,6 +115,7 @@ $(document).ready(function(){
   }, 4750);
 });
 
+// Create a cube with given dimensions and append to empty a-frame entity
 function addCube (x, y, z, height) {
   var $cube = $('<a-cube>');
   var $addedCube = $('.added-cube');
