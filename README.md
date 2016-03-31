@@ -13,3 +13,9 @@ sky photo credit (flickr): heiwa4126
 Demo of a-frame entity-component system
 
 sky photo credit (flickr): trolleway
+
+
+# Resources
+
+- [A-Frame Official Site](https://aframe.io)
+- [Made with A-Frame Tumblr](http://aframevr.tumblr.com/)
